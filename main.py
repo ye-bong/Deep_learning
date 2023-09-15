@@ -22,7 +22,7 @@ def start_search(pokemone_name, model_name):
     query = dl._Feature_Extract(img)
 
 
-    # 코사인 유사도 모델 실행
+    # 이미지 유사도 모델 실행
     if model_name == "L2_norm":
         ml.L2_norm(query, features, img_paths)
 
